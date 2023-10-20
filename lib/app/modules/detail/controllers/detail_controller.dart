@@ -10,14 +10,7 @@ class DetailController extends GetxController {
       await serviceApi.deleteProduct(product.id.toString());
       Get.back();
       Get.back();
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-        content: Text("Product deleted"),
-        duration: Duration(seconds: 3),
-        action: SnackBarAction(
-          label: "Close",
-          onPressed: () {},
-        ),
-      ));
+      Get.snackbar('Success', 'Produk berhasil dihapus');
     } catch (e) {
       print(e);
     }

@@ -131,7 +131,7 @@ class DetailView extends GetView<DetailController> {
                 height: 10,
               ),
               Container(
-                width: 150,
+                width: 200,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
                     border: Border.all(width: 1, color: Colors.purple),

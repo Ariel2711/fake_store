@@ -19,7 +19,7 @@ class Product {
     this.rating,
   });
 
-  factory Product.fromJson(Map<String, dynamic> json) {
+  Product fromJson(Map<String, dynamic> json) {
     return Product(
       id: json['id'],
       title: json['title'],
@@ -27,7 +27,7 @@ class Product {
       description: json['description'],
       category: json['category'],
       image: json['image'],
-      rating: Rating.fromJson(json['rating']),
+      rating: Rating().fromJson(json['rating']),
     );
   }
 
