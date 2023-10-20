@@ -266,8 +266,8 @@ class DetailView extends GetView<DetailController> {
                                                                 .circular(
                                                                     25)))),
                                         onPressed: () async {
-                                          await controller.deleteProduct(
-                                              product, context);
+                                          await controller
+                                              .deleteProduct(product);
                                         },
                                         child: Text(
                                           "Yes",

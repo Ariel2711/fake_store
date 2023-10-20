@@ -46,8 +46,7 @@ class FormController extends GetxController {
     return product;
   }
 
-  Future<void> storeProduct(
-      Product product, bool isUpdate, BuildContext context) async {
+  Future<void> storeProduct(Product product, bool isUpdate) async {
     try {
       product = controllerToModel(product);
       !isUpdate

@@ -248,12 +248,9 @@ class FormView extends GetView<FormController> {
                                         formKey.currentState?.validate() == true
                                             ? await controller.storeProduct(
                                                 product,
-                                                (product.id != null &&
-                                                        product.id != '' &&
-                                                        product.id != 0)
+                                                (product.id != null)
                                                     ? true
-                                                    : false,
-                                                context)
+                                                    : false)
                                             : Get.snackbar(
                                                 'Error', 'Data tidak valid');
                                       },
